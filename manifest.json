@@ -7,6 +7,7 @@
 	"description" 			:	"Maintains a history of your scrolling, and allows you to undo a major page position change",
 	"homepage_url" 			:	"https://github.com/richardmin97/ScrollHistoryExtension",
 	"author"				: 	"Richard Min @richardmin97",
+	"incognito"				:	"split",
 	"icons" 				: 
 	{
 		"16" 				: 	"icons/icon16.png",
@@ -18,7 +19,7 @@
 	{
 		"default_icon"		:	"icons/icons16.png",
 		"default_title"		:	"ScrollHistory",
-		"default_popup"		:	"icon/popup.html"
+		"default_popup"		:	"button/popup.html"
 	},
 
 
@@ -29,7 +30,11 @@
 
 	"permissions"			:
 	[
-		
+		"http://*/*",
+		"https://*/*",
+		"tabs",
+		"storage"
+
 	],
 
 	"commands"				:
@@ -38,12 +43,11 @@
 	},
 
 
-
-	// "content_scripts"		:	
-	// [
-	// 	{
-	// 		"all_frames"	:	"true"
-	// 	}
-	// ],
+	"content_scripts"		:	
+	[
+		{
+			"all_frames"	:	"true"
+		}
+	],
 
 }

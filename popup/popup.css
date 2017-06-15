@@ -1,0 +1,23 @@
+body {
+	background-color: #fff;
+}
+.wrapper {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 12px;
+	width: 500px;
+}
+
+
+.topmenu {
+	border: 2px solid #fff
+}
+
+.menuItem {
+
+}
+
+.menuItem:hover {
+	-webkit-transition: all 0.2s ease-out;
+	background: #F2F2F2;
+}
